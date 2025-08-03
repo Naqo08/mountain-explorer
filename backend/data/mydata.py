@@ -9,7 +9,7 @@ mountain_dict = [
     "continent": "Asia",
     "range": "Himalayas",
     "first_ascent": "1953",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/12/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg"
+    "image": "/data/images/everest.jpg"
   },
   {
     "id": 1,
@@ -19,7 +19,7 @@ mountain_dict = [
     "continent": "Asia",
     "range": "Karakoram",
     "first_ascent": "1954",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/K2_2006b.jpg"
+    "image": "/data/images/k2.jpg"
   },
   {
     "id": 2,
@@ -29,7 +29,7 @@ mountain_dict = [
     "continent": "Asia",
     "range": "Himalayas",
     "first_ascent": "1955",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Kangchenjunga_south_face.jpg"
+    "image": "/data/images/kangchenjunga.jpg"
   },
   {
     "id": 3,
@@ -39,7 +39,7 @@ mountain_dict = [
     "continent": "North America",
     "range": "Alaska Range",
     "first_ascent": "1913",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Denali_Mt_McKinley.jpg"
+    "image": "/data/images/denali.jpg"
   },
   {
     "id": 4,
@@ -49,7 +49,7 @@ mountain_dict = [
     "continent": "Europe",
     "range": "Alps",
     "first_ascent": "1786",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Mont_Blanc_from_Planpraz_station.jpg"
+    "image": "/data/images/mont-blanc.jpg"
   },
   {
     "id": 5,
@@ -59,7 +59,7 @@ mountain_dict = [
     "continent": "South America",
     "range": "Andes",
     "first_ascent": "1897",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Aconcagua2016.jpg"
+    "image": "/data/images/aconcagua.jpg"
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@ mountain_dict = [
     "continent": "Europe",
     "range": "Caucasus",
     "first_ascent": "1874",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Mount_Elbrus_from_the_north.jpg"
+    "image": "/data/images/mount-elbrus.jpg"
   },
   {
     "id": 7,
@@ -79,7 +79,7 @@ mountain_dict = [
     "continent": "Antarctica",
     "range": "Sentinel Range",
     "first_ascent": "1966",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/9/98/VinsonMassif_large.jpg"
+    "image": "/data/images/vinson-massif.jpg"
   },
   {
     "id": 8,
@@ -89,7 +89,7 @@ mountain_dict = [
     "continent": "Australia",
     "range": "Great Dividing Range",
     "first_ascent": "1840",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Mount_Kosciuszko.jpg"
+    "image": "/data/images/mount-kosciuszko.jpg"
   },
   {
     "id": 9,
@@ -99,7 +99,7 @@ mountain_dict = [
     "continent": "Europe",
     "range": "Alps",
     "first_ascent": "1865",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Matterhorn_from_Domh%C3%BCtte_-_2.jpg"
+    "image": "/data/images/matterhorn.jpg"
   }
 ]
 

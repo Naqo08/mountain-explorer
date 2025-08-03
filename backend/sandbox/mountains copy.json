@@ -7,7 +7,8 @@
     "continent": "Asia",
     "range": "Himalayas",
     "first_ascent": "1953",
-    "image": "/data/images/everest.jpg"
+    "image": "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0"
+
   },
   {
     "id": 1,
@@ -17,8 +18,7 @@
     "continent": "Asia",
     "range": "Karakoram",
     "first_ascent": "1954",
-    "image": "/data/images/k2.jpg"
-    
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/K2_2006b.jpg"
   },
   {
     "id": 2,
@@ -28,7 +28,7 @@
     "continent": "Asia",
     "range": "Himalayas",
     "first_ascent": "1955",
-    "image": "/data/images/kangchenjunga.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Kangchenjunga_south_face.jpg"
   },
   {
     "id": 3,
@@ -38,7 +38,7 @@
     "continent": "North America",
     "range": "Alaska Range",
     "first_ascent": "1913",
-    "image": "/data/images/denali.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Denali_Mt_McKinley.jpg"
   },
   {
     "id": 4,
@@ -48,7 +48,7 @@
     "continent": "Europe",
     "range": "Alps",
     "first_ascent": "1786",
-    "image": "/data/images/mont-blanc.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Mont_Blanc_from_Planpraz_station.jpg"
   },
   {
     "id": 5,
@@ -58,7 +58,7 @@
     "continent": "South America",
     "range": "Andes",
     "first_ascent": "1897",
-    "image": "/data/images/aconcagua.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Aconcagua2016.jpg"
   },
   {
     "id": 6,
@@ -68,7 +68,7 @@
     "continent": "Europe",
     "range": "Caucasus",
     "first_ascent": "1874",
-    "image": "/data/images/mount-elbrus.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Mount_Elbrus_from_the_north.jpg"
   },
   {
     "id": 7,
@@ -78,7 +78,7 @@
     "continent": "Antarctica",
     "range": "Sentinel Range",
     "first_ascent": "1966",
-    "image": "/data/images/vinson-massif.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/98/VinsonMassif_large.jpg"
   },
   {
     "id": 8,
@@ -88,7 +88,7 @@
     "continent": "Australia",
     "range": "Great Dividing Range",
     "first_ascent": "1840",
-    "image": "/data/images/mount-kosciuszko.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Mount_Kosciuszko.jpg"
   },
   {
     "id": 9,
@@ -98,6 +98,6 @@
     "continent": "Europe",
     "range": "Alps",
     "first_ascent": "1865",
-    "image": "/data/images/matterhorn.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Matterhorn_from_Domh%C3%BCtte_-_2.jpg"
   }
 ]
