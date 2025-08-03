@@ -3,4 +3,9 @@ uvicorn
 langchain
 langchain-community
 langchain-google-genai
+google-generativeai
+tavily-python
+wikipedia 
 python-dotenv
+streamlit 
+requests
