@@ -1,12 +1,25 @@
-# **🏔️ mountain-explorer**
+# **🏔️ Mountain Explorer**
 
-### **Mountain Explorer Web App**
+## **Mountain Explorer Web App**
 
-This app enables the user to view and get interesting facts about mountains. The user also able to generate unique facts about the mountains just by pressing the "Generate AI Facts".
+This app allows users to explore mountains and discover fascinating facts about them. Users can also generate unique, AI-powered insights about any mountain with the click of the "Generate AI Facts" button.
+
+## **🏛️ Overview & Architecture**
+
+This application uses a modern, decoupled three-tier architecture, integrating a smart client (frontend), a robust API (backend), and external AI services for dynamic content generation. 
+
+### **Architecture Diagram**
+
+![System Architecture Diagram for Mountain Explorer](frontend/src/assets/system-architecture.png)
+
+### **Component Roles**
+- **Frontend (React & Bootstrap)**: A responsive user interface built with React that handles user interaction. It fetches data from the backend and displays the mountain directory, filters, and detailed modal views.
+- **Backend (FastAPI)**: A Python-based API that serves mountain data from a JSON file, provides local image files, and orchestrates calls to the AI services for generating dynamic facts. 
+- **AI Engine (LangChain & Gemini)**: The "brain" of the application. It uses LangChain agent to process user prompts, gather information from tools like Tavily and Wikipedia, and uses Google's Gemini model to generate new, interesting facts about the mountains. 
 
 ## **📁 Project Structure**
 
-This repository contains both the fronend and backend system built with: 
+This repository contains both the frontend and backend system built with: 
 
 - **React** for frontend framework
 - **Bootstrap** for styling
@@ -125,4 +138,22 @@ cd mountain-explorer
     ```
   - Your browser should automatically open to `http://localhost:5173` (or a similar port), where you can see the Mountain Explorer app running.
 
+## **💡 Future Improvements & Expansions**
 
+This project provides a solid foundation that can be extended with many exciting features. Here are a few ideas for future development:
+
+- **Interactive Maps**: Integrate a mapping library like Leaflet or Google Maps to plot mountain locations. Clicking on a map pin could open the mountain's detail modal.
+
+- **Advanced Data Visualization**: Add a "Comparison Mode" where users can select multiple mountains and see a side-by-side visual comparison of their heights, prominences, and other stats using charts.
+
+- **Real-Time Data Integration**:
+
+  - **Summit Weather**: Integrate a weather API (like OpenWeatherMap) to display current weather conditions and a forecast for the mountain's summit.
+
+- **User-Generated Content**:
+
+  - **Photo Galleries**: Allow users to create accounts and upload their own photos from their climbs.
+
+  - **Reviews & Difficulty Ratings**: Implement a user-based rating system for climbing difficulty, trail conditions, and overall experience.
+
+- **Detailed Hiking & Climbing Routes**: For each mountain, add detailed information about popular hiking and climbing routes, including route maps, distance, elevation gain, and estimated time to complete.
