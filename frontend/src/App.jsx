@@ -51,16 +51,13 @@ function App() {
   return (
     <div className="d-flex flex-column" style={{ minHeight: '100vh' }}>
       <Header />
-      
       <main className="container my-3 flex-grow-1">
-        {/* Background section with container width */}
-        <div style={{
+        {/* Hero Section with rounded corners */}
+        <div className="mb-4" style={{
           background: 'linear-gradient(to bottom, #87CEEB 0%, #4682B4 50%, #2F4F4F 100%)',
-          color: 'white',
-          margin: '0 -15px', // Offset container padding
-          padding: '0 15px'   // Add back the padding for content
+          borderRadius: '0.5rem',
+          color: 'white'
         }}>
-          {/* Hero section */}
           <div className="text-center pt-5 pb-4">
             <h1 className="display-5 fw-bold">Discover Famous Mountains Around the World</h1>
             <p className="lead" style={{ color: '#e6f3ff' }}>
@@ -68,15 +65,15 @@ function App() {
             </p>
           </div>
 
-          {/* Filter section */}
-          <div className="d-flex justify-content-between align-items-center pb-4 border-bottom">
-            <h5 className="mb-0" style={{ color: '#e6f3ff' }}>Filter Mountains</h5>
+          {/* Filter Section */}
+          <div className="d-flex justify-content-between align-items-center border-top border-light border-opacity-25 pt-3 pb-3 px-4">
+            <h5 className="mb-0 text-white">Filter Mountains</h5>
             <div className="btn-group" role="group">
               {continents.map(continent => (
                 <button
                   key={continent}
                   type="button"
-                  className={`btn ${activeFilter === continent ? 'btn-light' : 'btn-outline-light'}`}
+                  className={`btn btn-sm ${activeFilter === continent ? 'btn-light' : 'btn-outline-light'}`}
                   onClick={() => setActiveFilter(continent)}
                 >
                   {continent}
@@ -86,15 +83,12 @@ function App() {
           </div>
         </div>
 
-        <div className="mt-4">
-          <MountainGrid
-            mountains={filteredMountains}
-            onCardClick={(mountain) => setSelectedMountain(mountain)}
-            backendUrl={BACKEND_URL}
-          />
-        </div>
+        <MountainGrid
+          mountains={filteredMountains}
+          onCardClick={(mountain) => setSelectedMountain(mountain)}
+          backendUrl={BACKEND_URL}
+        />
       </main>
-      
       <Footer />
       <MountainModal
         mountain={selectedMountain}
@@ -119,7 +113,7 @@ export default App;
 //   const [mountains, setMountains] = useState([]);
 //   const [filteredMountains, setFilteredMountains] = useState([]);
 //   const [activeFilter, setActiveFilter] = useState('All Continents');
-//   const [selectedMountain, setSelectedMountain] = useState(null); // Add this back
+//   const [selectedMountain, setSelectedMountain] = useState(null);
 //   const [loading, setLoading] = useState(true);
 //   const [error, setError] = useState(null);
 
@@ -160,39 +154,50 @@ export default App;
 //   return (
 //     <div className="d-flex flex-column" style={{ minHeight: '100vh' }}>
 //       <Header />
+      
 //       <main className="container my-3 flex-grow-1">
-//         <div className="text-center pt-5 pb-4 mb-4" style={{
+//         {/* Background section with container width */}
+//         <div style={{
 //           background: 'linear-gradient(to bottom, #87CEEB 0%, #4682B4 50%, #2F4F4F 100%)',
-//           color: 'white'
+//           color: 'white',
+//           margin: '0 -15px', // Offset container padding
+//           padding: '0 15px'   // Add back the padding for content
 //         }}>
-//           <h1 className="display-5 fw-bold">Discover Famous Mountains Around the World</h1>
-//           <p className="lead" style={{ color: '#e6f3ff' }}>
-//             Explore majestic peaks, learn fascinating facts, and plan your next mountain adventure with our comprehensive mountain database.
-//           </p>
-//         </div>
+//           {/* Hero section */}
+//           <div className="text-center pt-5 pb-4">
+//             <h1 className="display-5 fw-bold">Discover Famous Mountains Around the World</h1>
+//             <p className="lead" style={{ color: '#e6f3ff' }}>
+//               Explore majestic peaks, learn fascinating facts, and plan your next mountain adventure with our comprehensive mountain database.
+//             </p>
+//           </div>
 
-//         <div className="d-flex justify-content-between align-items-center mb-4 border-bottom pb-3">
-//           <h5 className="mb-0 text-secondary">Filter Mountains</h5>
-//           <div className="btn-group" role="group">
-//             {continents.map(continent => (
-//               <button
-//                 key={continent}
-//                 type="button"
-//                 className={`btn ${activeFilter === continent ? 'btn-dark' : 'btn-outline-dark'}`}
-//                 onClick={() => setActiveFilter(continent)}
-//               >
-//                 {continent}
-//               </button>
-//             ))}
+//           {/* Filter section */}
+//           <div className="d-flex justify-content-between align-items-center pb-4 border-bottom">
+//             <h5 className="mb-0" style={{ color: '#e6f3ff' }}>Filter Mountains</h5>
+//             <div className="btn-group" role="group">
+//               {continents.map(continent => (
+//                 <button
+//                   key={continent}
+//                   type="button"
+//                   className={`btn ${activeFilter === continent ? 'btn-light' : 'btn-outline-light'}`}
+//                   onClick={() => setActiveFilter(continent)}
+//                 >
+//                   {continent}
+//                 </button>
+//               ))}
+//             </div>
 //           </div>
 //         </div>
 
-//         <MountainGrid
-//           mountains={filteredMountains}
-//           onCardClick={(mountain) => setSelectedMountain(mountain)}
-//           backendUrl={BACKEND_URL}
-//         />
+//         <div className="mt-4">
+//           <MountainGrid
+//             mountains={filteredMountains}
+//             onCardClick={(mountain) => setSelectedMountain(mountain)}
+//             backendUrl={BACKEND_URL}
+//           />
+//         </div>
 //       </main>
+      
 //       <Footer />
 //       <MountainModal
 //         mountain={selectedMountain}
