@@ -147,7 +147,6 @@ mountain_dict = [
   }
 ]
 
-# This part of your script writes the list to the mountains.json file
 json_string = json.dumps(mountain_dict, indent=2)
 with open("./backend/data/mountains.json", 'w') as f:
   f.write(json_string)

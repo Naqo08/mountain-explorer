@@ -89,7 +89,7 @@ prompt = PromptTemplate.from_template(
     """
 )
 
-llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", 
+llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", 
                              api_key=GEMINI_API_KEY, 
                              temperature=0.3)
 tools = [tavily_tool, wikipedia_search]
@@ -101,72 +101,6 @@ agent_executor = AgentExecutor(
   handle_parsing_errors=True,
 )
 
-# @app.get("/api/mountains/{mountain_id}/ai-facts")
-# def get_ai_facts(mountain_id: int):
-#   mountain = next((m for m in mountains if m["id"] == mountain_id), None)
-
-#   if not mountain: 
-#     return {"error": "Mountain not found"}
-  
-#   mountain_name = mountain["name"]
-#   prompt_input = f"""Generate 1-2 fascinating and little-known facts about {mountain_name}, focusing on its history, cultural significance, or unique geological features. Also, mention one recent event or discovery related to it if available."""
-
-#   try: 
-#     response = agent_executor.invoke({
-#       "input": prompt_input,
-#     })
-#     return {"facts" : response["output"]}
-#   except Exception as e:
-#     print(f"AI Agent Error: {e}")
-#     return {"error": "Failed to generate AI facts."}
-
-# @app.get("/api/mountains/{mountain_id}/ai-facts")
-# def get_ai_facts(mountain_id: int):
-#     mountain = next((m for m in mountains if m["id"] == mountain_id), None)
-
-#     if not mountain: 
-#         return {"error": "Mountain not found"}
-    
-#     mountain_name = mountain["name"]
-#     prompt_input = f"""Generate 2-3 fascinating facts about {mountain_name}. Format as bullet points:
-# • Fact one
-# • Fact two
-# • Recent event"""
-
-#     try: 
-#         response = agent_executor.invoke({
-#             "input": prompt_input,
-#         })
-        
-#         # Extract text from the LangChain response structure
-#         raw_output = response["output"]
-        
-#         # Handle the list of HumanMessage objects
-#         if isinstance(raw_output, list) and len(raw_output) > 0:
-#             human_message = raw_output[0]
-#             if hasattr(human_message, 'content') and len(human_message.content) > 0:
-#                 facts_text = human_message.content[0]['text']
-#             else:
-#                 facts_text = str(raw_output)
-#         else:
-#             facts_text = str(raw_output)
-        
-#         # Format with proper line breaks
-#         if '•' in facts_text:
-#             parts = facts_text.split('•')
-#             formatted_facts = []
-#             for part in parts:
-#                 part = part.strip()
-#                 if part:
-#                     formatted_facts.append(f"• {part}")
-#             facts_text = '\n'.join(formatted_facts)
-        
-#         return {"facts": facts_text}
-        
-#     except Exception as e:
-#         print(f"AI Agent Error: {e}")
-#         return {"error": "Failed to generate AI facts."}
-
 @app.get("/api/mountains/{mountain_id}/ai-facts")
 def get_ai_facts(mountain_id: int):
     mountain = next((m for m in mountains if m["id"] == mountain_id), None)
@@ -175,7 +109,8 @@ def get_ai_facts(mountain_id: int):
         return {"error": "Mountain not found"}
     
     mountain_name = mountain["name"]
-    prompt_input = f"""Generate 1-2 fascinating and little-known facts about {mountain_name}, focusing on its history, cultural significance, or unique geological features. Also, mention one recent event or discovery related to it if available.
+    prompt_input = f"""
+    Generate 1-2 fascinating and little-known facts about {mountain_name}, focusing on its history, cultural significance, or unique geological features. Also, mention one recent event or discovery related to it if available.
 
     Format your response with each fact on a new line, starting with a bullet point (•).
     """
@@ -199,3 +134,22 @@ def get_ai_facts(mountain_id: int):
     except Exception as e:
         print(f"AI Agent Error: {e}")
         return {"error": "Failed to generate AI facts."}
+    
+# @app.get("/api/mountains/{mountain_id}/ai-facts")
+# def get_ai_facts(mountain_id: int):
+#   mountain = next((m for m in mountains if m["id"] == mountain_id), None)
+
+#   if not mountain: 
+#     return {"error": "Mountain not found"}
+  
+#   mountain_name = mountain["name"]
+#   prompt_input = f"""Generate 1-2 fascinating and little-known facts about {mountain_name}, focusing on its history, cultural significance, or unique geological features. Also, mention one recent event or discovery related to it if available."""
+
+#   try: 
+#     response = agent_executor.invoke({
+#       "input": prompt_input,
+#     })
+#     return {"facts" : response["output"]}
+#   except Exception as e:
+#     print(f"AI Agent Error: {e}")
+#     return {"error": "Failed to generate AI facts."}
