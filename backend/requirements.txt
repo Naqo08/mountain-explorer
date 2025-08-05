@@ -9,3 +9,4 @@ wikipedia
 python-dotenv
 streamlit 
 requests
+gunicorn

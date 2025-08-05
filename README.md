@@ -4,6 +4,12 @@
 
 This app allows users to explore mountains and discover fascinating facts about them. Users can also generate unique, AI-powered insights about any mountain with the click of the "Generate AI Facts" button.
 
+## 🎥 Video Demo
+
+A quick demonstration of the Mountain Explorer web application in action. Click the image below to watch the video on YouTube. 
+
+[![Mountain Explorer App Demo](https://img.youtube.com/vi/s2Xd5Om3wtA/mqdefault.jpg)](https://youtu.be/s2Xd5Om3wtA?si=L7mVtCb6t2dhGeLK)
+
 ## **🏛️ Overview & Architecture**
 
 This application uses a modern, decoupled three-tier architecture, integrating a smart client (frontend), a robust API (backend), and external AI services for dynamic content generation. 

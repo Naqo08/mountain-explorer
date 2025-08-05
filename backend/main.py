@@ -13,6 +13,8 @@ from langchain_community.utilities import WikipediaAPIWrapper
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
+FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:5173")
+
 app = FastAPI()
 app.mount("/data", StaticFiles(directory="data"), name="data")
 
@@ -21,6 +23,7 @@ origins = [
     "http://localhost:3000",
     "http://localhost:5173", # Vite/React port
     "http://localhost:8501", # Streamlit port
+    FRONTEND_URL,
 ]
 app.add_middleware(
     CORSMiddleware,
