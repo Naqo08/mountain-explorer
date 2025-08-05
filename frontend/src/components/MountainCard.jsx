@@ -1,7 +1,7 @@
 import React from 'react';
 
 const MountainCard = ({ mountain, onCardClick, backendUrl }) => {
-  const imageUrl = `${backendUrl}${mountain.image}`; // Remove the extra slash
+  const imageUrl = `${backendUrl}${mountain.image}`;
 
   return (
     <div className="col" onClick={onCardClick}>

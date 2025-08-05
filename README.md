@@ -29,7 +29,7 @@ This repository contains both the frontend and backend system built with:
 ## **🚀 Getting Started**
 #### Follow these steps to set up the project.
 
-## **🔗 I. Clone the Repository**
+## **I. 🔗 Clone the Repository**
 
 ```bash
 git clone https://github.com/Naqo08/mountain-explorer.git
@@ -84,6 +84,8 @@ cd mountain-explorer
 2. **Set Up Environment Variables**
   - In the `backend` directory, create a new file named `.env`.
   - Add your API keys to this file. This is crucial for the AI features to work. 
+    - **Google Gemini API Key**: Get your key from [Google AI Studio](https://aistudio.google.com/app/apikey).
+    - **Tavily API Key**: Get you key from the [Tavily Homepage](https://app.tavily.com/home).
 
     ```bash
     GEMINI_API_KEY="your_google_api_key_here"
@@ -106,7 +108,7 @@ cd mountain-explorer
 ### **A. Install Node.js**
 
 1. **Download Node.js**
-  - If you don't have Node.js installed, download the LTS (Long-Term Support) version from the official Node.js website.
+  - If you don't have Node.js installed, download the LTS (Long-Term Support) version from the [official Node.js website](https://nodejs.org/en)
 2. **Verify Installation**
   - Open a new terminal and run the following commands to ensure Node.js and npm are installed correctly.: 
 
@@ -141,8 +143,6 @@ cd mountain-explorer
 ## **💡 Future Improvements & Expansions**
 
 This project provides a solid foundation that can be extended with many exciting features. Here are a few ideas for future development:
-
-- **Interactive Maps**: Integrate a mapping library like Leaflet or Google Maps to plot mountain locations. Clicking on a map pin could open the mountain's detail modal.
 
 - **Advanced Data Visualization**: Add a "Comparison Mode" where users can select multiple mountains and see a side-by-side visual comparison of their heights, prominences, and other stats using charts.
 
