@@ -68,7 +68,7 @@ cd mountain-explorer
   - *Windows*
     ```bash
     # For Git Bash
-    source .venv/Scripts/activate`
+    source .venv/Scripts/activate
 
     # For Command Prompt
     .\venv\Scripts\activate
@@ -91,7 +91,7 @@ cd mountain-explorer
   - In the `backend` directory, create a new file named `.env`.
   - Add your API keys to this file. This is crucial for the AI features to work. 
     - **Google Gemini API Key**: Get your key from [Google AI Studio](https://aistudio.google.com/app/apikey).
-    - **Tavily API Key**: Get you key from the [Tavily Homepage](https://app.tavily.com/home).
+    - **Tavily API Key**: Get your key from the [Tavily Homepage](https://app.tavily.com/home).
 
     ```bash
     GEMINI_API_KEY="your_google_api_key_here"
